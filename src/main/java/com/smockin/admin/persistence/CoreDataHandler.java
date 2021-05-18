@@ -85,7 +85,7 @@ public class CoreDataHandler {
 
     void applyAppVersioning() {
 
-        final String appVersionArg = System.getProperty("2.13.0");
+        final String appVersionArg = "2.13.0";
 
         if (appVersionArg == null) {
             logger.error("Invalid application version arg (-Dapp.version): " + appVersionArg);
