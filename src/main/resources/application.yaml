@@ -24,6 +24,12 @@ smockin:
 spring:
   profiles:
     active: production
+  cloud:
+   compatibility-verifier: 
+     enabled: false
+  sleuth:
+      opentracing:
+           enabled: true    
   jpa:
     show-sql: false
     open-in-view: false
