@@ -48,7 +48,7 @@ public class SmockinApp {
 
     public static void main(String[] args) {
         SpringApplication.run(SmockinConfig.class, args);
-        System.out.println("Agora vai! ok");
+        System.out.println("Agora vai! ");
     }
 
 }
