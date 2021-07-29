@@ -18,24 +18,6 @@ smockin:
   auth.exclusions: '{"*.html":["GET"],"*.js":["GET"],"*.css":["GET"],"*.woff2":["GET"],"*.png":["GET"],"*.gif":["GET"],"/auth":["POST"],"/user/mode":["GET"],"/mockedserver/rest/status":["GET"],"/mockedserver/jms/status":["GET"],"/mockedserver/ftp/status":["GET"],"/password/reset/token/*":["GET","POST"]}'
 
 
-
-
-# TRACING-settings
-opentracing:
-  jaeger:
-    enabled: true
-    service-name: smockin
-    enable-b3-propagation: true
-    log-spans: true
-    const-sampler:
-      decision: true
-    http-sender:
-      url: http://jaeger-collector.istio-system-hlg.svc:14268/api/traces 
-            
-            
-            
-
-
 ---
 # NOTE
 # The 'start.sh' script overrides the below DB related params using values defined
@@ -66,3 +48,15 @@ spring:
     hikari:
       poolName: smockinpool
       idle-timeout: 10000
+      
+# TRACING-settings
+opentracing:
+  jaeger:
+    enabled: true
+    service-name: smockin
+    enable-b3-propagation: true
+    log-spans: true
+    const-sampler:
+      decision: true
+    http-sender:
+      url: http://jaeger-collector.istio-system-hlg.svc:14268/api/traces       
