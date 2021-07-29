@@ -21,9 +21,11 @@ smockin:
 
 opentracing:
     jaeger:
-        udp-sender:
-            host: ${JAEGER_URL:jaeger-collector.istio-system-hlg.svc}
-            port:  ${JAEGER_PORT:9411}
+      log-spans: true
+      http-sender:
+            url: ${JAEGER_URL:jaeger-collector.istio-system-hlg.svc/api/traces}
+            
+            
 
 
 ---
