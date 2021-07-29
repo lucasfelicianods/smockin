@@ -22,6 +22,8 @@ smockin:
 # The 'start.sh' script overrides the below DB related params using values defined
 # in the DB config file: '$USER_HOME/.smockin/db/db.properties'.
 spring:
+  application:
+    name: smockin
   profiles:
     active: production
   cloud:
