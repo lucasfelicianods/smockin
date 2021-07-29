@@ -22,7 +22,7 @@ smockin:
 opentracing:
     jaeger:
         udp-sender:
-            host: ${JAEGER_URL:jaeger-istio-system-hlg.apps.aro-cluster-002.grupolight.local}
+            host: ${JAEGER_URL:jaeger-collector.istio-system-hlg.svc}
             port:  ${JAEGER_PORT:9411}
 
 
