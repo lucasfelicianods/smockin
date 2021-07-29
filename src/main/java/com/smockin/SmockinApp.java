@@ -48,7 +48,7 @@ public class SmockinApp {
 
     public static void main(String[] args) {
         SpringApplication.run(SmockinConfig.class, args);
-        System.out.println("Agora vai by reberth/lucas/gustavo! ");
+        System.out.println("Agora vai by reberth/lucas/gustavo--! ");
     }
 
 }

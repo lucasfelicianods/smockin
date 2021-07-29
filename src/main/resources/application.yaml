@@ -23,7 +23,7 @@ opentracing:
     jaeger:
       log-spans: true
       http-sender:
-            url: http://jeaeger-collector.istio-system-hlg.svc/api/traces
+            url: http://jeaeger-collector.istio-system-hlg.svc.cluster.local/api/traces
             
             
 
