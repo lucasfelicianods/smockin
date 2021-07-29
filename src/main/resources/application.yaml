@@ -17,6 +17,15 @@ smockin:
   ftp.root.dir: "${user.home}/.smockin/ftp/"
   auth.exclusions: '{"*.html":["GET"],"*.js":["GET"],"*.css":["GET"],"*.woff2":["GET"],"*.png":["GET"],"*.gif":["GET"],"/auth":["POST"],"/user/mode":["GET"],"/mockedserver/rest/status":["GET"],"/mockedserver/jms/status":["GET"],"/mockedserver/ftp/status":["GET"],"/password/reset/token/*":["GET","POST"]}'
 
+
+
+opentracing:
+    jaeger:
+        udp-sender:
+            host: ${JAEGER_URL:jaeger-istio-system-hlg.apps.aro-cluster-002.grupolight.local}
+            port:  ${JAEGER_PORT:9411}
+
+
 ---
 # NOTE
 # The 'start.sh' script overrides the below DB related params using values defined
