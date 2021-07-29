@@ -23,10 +23,11 @@ smockin:
 # TRACING-settings
 opentracing:
   jaeger:
-    service-name: AppB
+    service-name: smockin
     enabled: TRUE
     udp-sender:
-      host: jaeger-agent.istio-system-hlg.svc.cluster.local         
+      host: jaeger-collector.istio-system-hlg.svc
+      port: 9411         
             
             
 
