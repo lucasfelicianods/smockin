@@ -19,11 +19,14 @@ smockin:
 
 
 
+
+# TRACING-settings
 opentracing:
-    jaeger:
-      log-spans: true
-      http-sender:
-            url: http://jeaeger-collector.istio-system-hlg.svc.cluster.local/api/traces
+  jaeger:
+    service-name: AppB
+    enabled: TRUE
+    udp-sender:
+      host: jaeger-agent         
             
             
 
