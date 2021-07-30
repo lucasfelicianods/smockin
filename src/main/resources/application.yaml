@@ -52,7 +52,10 @@ spring:
 # TRACING-settings
 opentracing:
   jaeger:
-    service-name: smockin
-    enabled: TRUE
-    udp-sender:
-      host: jaeger-agent.istio-system-hlg.svc 
+    enabled: true
+    enable-b3-propagation: true
+    log-spans: true
+    const-sampler:
+      decision: true
+    http-sender:
+      url: jaeger-collector.istio-system-hlg.svc:9411
