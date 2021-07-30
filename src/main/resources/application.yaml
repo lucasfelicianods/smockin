@@ -58,4 +58,4 @@ opentracing:
     const-sampler:
       decision: true
     http-sender:
-      url: jaeger-collector.istio-system-hlg.svc:9411
+      url:  http://jaeger-collector.istio-system-hlg.svc:9411/api/traces
