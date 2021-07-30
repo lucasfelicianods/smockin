@@ -171,20 +171,6 @@
             <version>${spring-boot-test.version}</version>
             <scope>test</scope>
         </dependency>
-             
-        <!-- Dependencias do Jaeger OpenTracing-->
-         <dependency>
-  			<groupId>io.opentracing.contrib</groupId>
-  			<artifactId>opentracing-spring-jaeger-web-starter</artifactId>
-  			<version>3.3.1</version>
-		</dependency>   
-		
-		<dependency>
-		  <groupId>io.github.openfeign.opentracing</groupId>
-		  <artifactId>feign-opentracing</artifactId>
-		  <version>0.3.0</version>
-		</dependency>
-
     </dependencies>
 
     <build>

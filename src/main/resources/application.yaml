@@ -49,13 +49,3 @@ spring:
       poolName: smockinpool
       idle-timeout: 10000
       
-# TRACING-settings
-opentracing:
-  jaeger:
-    enabled: true
-    enable-b3-propagation: true
-    log-spans: true
-    const-sampler:
-      decision: true
-    http-sender:
-      url:  http://jaeger-collector.istio-system-hlg.svc:9411
