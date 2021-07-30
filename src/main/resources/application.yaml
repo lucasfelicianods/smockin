@@ -40,7 +40,7 @@ spring:
       ddl-auto: update
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:h2:file:c:/app/smockinDB
+    url: jdbc:h2:file:/app/smockinDB
     driver-class-name:
     username:
     password:
